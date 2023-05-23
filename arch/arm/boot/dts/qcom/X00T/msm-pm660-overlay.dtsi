@@ -81,9 +81,9 @@
 &pm660_charger {
 	qcom,chg-alert-vadc = <&pm660_vadc>;
 	qcom,micro-usb;
-	qcom,fcc-max-ua = <1000000>;
+	qcom,fcc-max-ua = <4000000>;
 	qcom,fv-max-uv = <4350000>;
-	qcom,usb-icl-ua = <1000000>;
+	qcom,usb-icl-ua = <3000000>;
 	qcom,float-option = <1>;
 	qcom,auto-recharge-soc;
 	qcom,pm-gpio3-vadc = <&pm660_vadc>;
@@ -114,8 +114,4 @@
 	qcom,fg-recharge-soc-thr = <98>;
 	qcom,fg-auto-recharge-soc;
 	qcom,fg-rsense-sel=<1>;
-};
-
-&pm660_haptics {
-	qcom,actuator-type = <1>;
 };
